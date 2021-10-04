@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2021-10_博洋「梳理逻辑」的朋友圈数据</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<style type="text/css">
+body { font-size:14px; line-height: 120%;text-align: center; color:#333;position:relative;background:#fcfcfc;}
+a { color: #333; text-decoration: none;}
+a:hover { text-decoration: none;}
+* { margin: 0; padding: 0; border: none;}
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden}
+.clearfix { *height:1%;}
+#list { margin: 0 auto; text-align: left;max-width:640px;background:#fff; box-shadow: rgba(60, 60, 60, 0.22) 0px 0px 5px;}
+.box { border-bottom: 1px solid #eee; position: relative;padding:1rem;}
+.box:hover .close { display: block;}
+.head { float: left; width:10%;margin-right:2%;border-radius:10%;}
+.content { float: left; width:88%;}
+.main { margin-bottom: 10px;}
+.share{background:#f7f7f7;padding:3%;vertical-align:middle;}
+.share .text{float:left;width:85%;display:inline-block;font-size:0.95rem;color:#4966b9;line-height:1.3rem;}
+.share .text span{font-size:0.8rem;line-height:28px;font-weight:0;color:#7d97e1;}
+.share .img{float:left;width:12%;margin-right:2%;display:inline-block;}
+.share .img img{width:100%;}
+.pic_0{clear:both;}
+.pic_1{overflow:hidden;max-height:40rem;}
+.pic_1 .pic{width:65%;}
+.pic_1 video{width:65%;}
+.pic_n .pic{width:32.2%;display:inline-block;height:0px;padding-bottom:32.8%;overflow:hidden;background-position: center;center;background-size:cover;}
+.pic img{width:100%;}
+.txt {line-height:1.6rem;font-size:1rem;margin-bottom:1rem;}
+.txt img{width:1.2rem;vertical-align:top;margin:0 0.1rem;margin-top:0.2rem;}
+.user { color: #295c9d; line-height:1.6rem;}
+.info { height: 20px; line-height: 19px; font-size:0.6rem; margin: 0 0 10px 0;}
+.info .time { color: #ccc; float: left; height: 20px;}
+.zan {background:#fdfdfd;color:#175bb1;line-height:1.5rem;font-size:0.6rem;margin:0 5px;padding:5px;font-size:0.8rem;}
+.com {background:#fdfdfd;line-height:1.5rem;font-size:0.8rem;margin:0 5px;padding:5px;border-top:1px solid #eee;word-break:break-all;}
+.com img{width:1rem;vertical-align:top;margin:0 0.1rem;margin-top:0.3rem;}
+.com span{color:#175bb1;}
+.black_overlay{display: none;position: absolute;width: 100%;height: 100%;background-color:rgba(0,0,0,0.95);z-index: 1001;}
+.white_content{display:none;position:fixed;width:100%;height:100%;z-index:1002;overflow:auto;text-align:center;align-items: center;margin:0 auto;background-position: center;center;background-size:100%;background-repeat:no-repeat;}
+#f_pic{margin:0 auto;max-width:640px;width:100%;}
+#l_c{display:block;position:fixed;left:0;top:50%;padding:1rem;color:#fff;background:rgba(255,255,255,0.3);font-size:2rem;line-height:4rem;z-index:9999;}
+#r_c{display:block;position:fixed;right:0;top:50%;padding:1rem;color:#fff;background:rgba(255,255,255,0.3);;font-size:2rem;line-height:4rem;z-index:9999;}
+#wz{color:#175bb1;background:rgba(0,0,0,0.3);padding:10px;right:0px;top:0px;position:fixed;}
+.open{position:absolute;top:1rem;right:1rem;color:#f1f1f1;}
+#input{position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+</style>
+<script>
+var URL = decodeURIComponent(window.location.href).replace('file:///','');
+Dir = URL.substr(0,URL.lastIndexOf("/"));
+function CopyFile(obj,filename){
+      var input = document.getElementById("input");
+      input.value = Dir+"/"+filename;
+      input.select(); 
+      document.execCommand("copy"); 
+	  if(obj.style.color=='rgb(51, 51, 51)'){
+	  obj.style.color='#f1f1f1';
+	  }else{
+	  obj.style.color='#aaa';
+	  }
+}
+</script>
+</head>
+<body>
+<textarea id="input"></textarea>
+<div id="fade" class="black_overlay"></div>
+<div id="light" class="white_content" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img id="f_pic" src="" style="margin-top:0;" /><div id="l_c" onclick="prev();">&lt;</div><div id="r_c" onclick="next();">&gt;</div></div>
+<div id="list"><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>现在的中国大众戾气很大，很偏激，自尊心很强，很多观点先入为主！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-04 11:04:49</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>现在的道德观念完全就与具体问题具体分析是相悖的！是极大的限制极大的阻碍！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-04 10:46:24</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中共不拿中国人当人啊！洗脑洗的太严重了，拼命的压榨大众！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-04 10:44:21</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中共洗脑给大众塑造了一堆莫名其妙的思维，特别是道德绑架，不去考虑实际情况及对方的利益关系，而是直接用自己的思维信念去要求别人，简直莫名其妙！而且大众这个思维非常根深蒂固！<br/>这是个极大的问题！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 23:20:03</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>417<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>维护政权的是中共人，想要民主法治自由的是中国人。<br/>中共洗脑程度如此严重，海内外渗透如此严重，未来移民会不会更严呢？海外无脑粉红如果多了，华人又该怎么办呢？
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 22:55:25</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>416<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>自己的思维清晰后，而不长去思考大众的思维，就会导致觉得大众的思维很莫名其妙，就会导致难以理解大众的思维，难以引导梳理改正大众的思维信念。<br/>这就会出现很多各吵各的，谁都不理解谁的局面发生。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 22:50:03</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>415<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>发了个“gf不灭，天理难容”直接给我封号了！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/03_222512_1.jpg" src="2021/10/03_222512_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 22:25:12</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>414<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>道高一尺，魔高一丈！<br/>中共把各种问题都给颠倒是非、混淆视听、偷换概念、转移矛盾了！<br/>在中共地盘上被中共宣传塑造的思维实在是难以引导改正！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 22:15:50</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>413<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中共把中华文明古国和中华人民共和国和政府和中国公民等概念都给绑在一块了！<br/>所以发表相关观点时，一定要表达精准！否则极易被误解、被曲解，引起不必要的麻烦。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 22:10:01</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>412<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国的网络受到了极大的污染！<br/>严重影响了大众的思维！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 20:08:20</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>411<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>道德观念对人对己都是极大的束缚！本质就是用来束缚人的。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 20:05:35</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>最新消息，刚刚我妈接到我姐来电，我姐和我姐夫又吵架了。<br/>他俩吵架，简直是太意料之中了。<br/>而调解方式往往是道德绑架，而不是分析问题解决问题，最终终会绑无可绑。<br/>这是整个社会普遍存在的问题，这个社会就是个问题社会，其根本性原因还是政治体制问题。<br/>这个逻辑链很长很复杂，我就不赘述了。<br/>我要赶紧跑路，不然迟早得被他们绑死！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 19:55:12</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>409<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这种问题在这种平台不可能得到深度客观的回答
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/03_190916_1.jpg" src="2021/10/03_190916_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 19:09:16</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>408<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>没有相应的语言环境，就难以得到频繁的强化修正。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 18:26:16</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>网上的内容没法看了，基本都是可以洗脑宣传的内容。太恶心了！<br/>遇上被这种内容洗脑的人，简直太可怕了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 17:45:19</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>406<br/><span>博洋「梳理逻辑」：</span>刻意<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这看着都滑稽！<br/>我估计这些视频、文章、评论基本就是中共给钱工作的人所发的！<br/>而普通正常人发点不同的意见都会遭到攻击，理性人发表点客观不同的观点都会遭到审查管控和谐掉，其他人更是懒得搭理这种滑稽的视频、文章及评论。<br/>而这就会造成一些认知能力有限，信息获取渠道单一的朋友的信以为真。这么下去怎么得了！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/03_173607_1.jpg" style="background-image:url(2021/10/03_173607_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_173607_2.jpg" style="background-image:url(2021/10/03_173607_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_173607_3.jpg" style="background-image:url(2021/10/03_173607_3.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 17:36:07</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>405<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>你不了解真正的中国近代史，不了解真正的共产党，不了解中国的政治，不了解中国的现状，你就不会明白这种发言违规的真正原因！<br/>以往我还以为这是资本家自己的问题呢！但当你了解一切脉络清晰后，你就会明白各种问题背后的联系和根本性原因了！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/03_170119_1.jpg" src="2021/10/03_170119_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 17:01:19</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>404<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>很多人宣传的内容不够精准，其中很多概念被思维被塑造过的人所理解起来是不同的！<br/>要分析大众的思维信念，精准且系统的引导大众改正其思维信念！<br/>如果一直用自己的思维去宣传，思维被塑造的大众是难以理解的，反而可能会令大众更加坚定被塑造的思维信念！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 16:49:47</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>403<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国网络上发言的大众的自尊心普遍都很强，因为中国网络用户普遍也都是些思维浅薄、没有自己思想、精神贫瘠的普通人，这些人在现实中的自尊心就很强，而理性的人很少上网或者面对那些反智言论已经懒得发言了。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 16:30:26</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>402<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中华多磨难！<br/>要拯救中华文明古国，拯救生活在这片土地上的人！要推翻中共王朝！<br/>实现真正的民主、自由、法治！使公民真正成为国家的主人！<br/>国人的各种概念都被中共给混淆了！<br/>你得充分精准的了解大众被中共宣传塑造的思维信念，才能精准的引导改正大众错误的思维信念！！！<br/>要先帮助大众梳理清各种被混淆的概念！<br/>然后还原各种被中共宣传篡改过的历史真相！还原被中共颠倒黑白混淆视听偷换概念的事件！还原现状各种问题的根本性原因，帮助大众梳理清逻辑，认清中共的真实面目！<br/><br/>国有两个概念，一个是政权，一个是文明文化民族疆域。<br/>所谓的恨国，实际上恨的是统治这个国家的政权！因为现在的中国权力高度集中，中共及其领导人控着一切，一切问题都与中共脱不了干系！<br/>是不是中国人？<br/>是拥有中华文明古国文明文化血脉的人呢？还是拥有中华人民共和国国籍的中国人呢！前者才是中国人！后者是中共人！作为一个中国人怎么能够允许这样的政权霸占统治着国家，阻碍着国家的发展，压迫着中国人呢！<br/>爱国和爱政权一定要分开！<br/>要真的是爱国，爱中国的文明文化民族同胞，那你怎么能够忍受着这样的政权霸占着中国呢！<br/>你不捍卫作为中国人中国公民应该拥有的权利，不去保护自己的文化文明及同胞，却去拥护这个阻碍国家发展迫害中国人的政权及这个体制，你这根本就是在祸国殃民！！！<br/>苟利国家生死以，岂因祸福避趋之！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 15:58:41</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>401<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>后悔也莫名其妙，事情已成客观事实无法改变了，还去想他干嘛！<br/>这种思维必须纠正！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 14:44:15</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>400<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这种颠倒是非、混淆视听、偷换概念、制造对立、制造情绪化的视频，就是在祸国殃民！气死我了！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/03_134348_1.jpg" style="background-image:url(2021/10/03_134348_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_134348_2.jpg" style="background-image:url(2021/10/03_134348_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_134348_3.jpg" style="background-image:url(2021/10/03_134348_3.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_134348_4.jpg" style="background-image:url(2021/10/03_134348_4.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_134348_5.jpg" style="background-image:url(2021/10/03_134348_5.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 13:43:48</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>一个人什么都不懂不可怕，可怕的是一个人持有很多错误的思维信念并根深蒂固！！！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 13:20:50</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>398<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>同胞痛苦，我却力不从心，痛心啊！！！<br/>很多人经常说什么多巴胺、肾上腺素，简直蠢死了！<br/>关于神经递质和主观感受的问题，很复杂，解释起来很麻烦，而一大帮人老扯什么多巴胺什么的，简直烦死人了！！！<br/>不要老去关注神经递质，那只是个表象！它只是个介质（神经可塑——神经递质的分泌是受神经网络结构和外界环境的影响）<br/>根本性原因在于神经连接结构也就是思维逻辑信念，而这又主要受外界环境影响塑造！！！<br/>所以解决问题的关键在于改变环境改变思维！！！<br/>还有很多关于抑郁症的文章回答，简直就是瞎扯淡！严重影响了大家的思维信念！！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/03_131439_1.jpg" style="background-image:url(2021/10/03_131439_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_131439_2.jpg" style="background-image:url(2021/10/03_131439_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/03_131439_3.jpg" style="background-image:url(2021/10/03_131439_3.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 13:14:39</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>397<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>严格管控啊！<br/>我的国家我的同胞啊！<br/>难受难受难受难受啊！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/03_122926_1.jpg" src="2021/10/03_122926_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 12:29:26</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>396<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>我爱国！我爱着中华文明古国的文明文化，爱着同文同种的同胞们！<br/>我关心着被中共统治之下的中华文明古国及同胞们如何才能醒悟！如何才能走向正轨！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 11:41:31</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>395<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>一个局域国，中共管辖着一切，严格管控审查着言论，并刻意颠倒是非混淆视听偷换概念引导塑造强化着大众的思维信念，致使清醒的人无法发声，大众之间又互相强化着被塑造引导的各种思维信念，如此便陷入了恶性循环！大众的思维信念越来越极端！越来越混乱！越来越情绪化！越来越令人压抑！<br/>各种道德绑架令大家痛苦不堪，焦虑抑郁也随之而来！<br/>中共的罪孽极其深重！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 11:37:11</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>394<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>持有各种道德观念，并按照自己的道德观念去要求别人，这完全就是脱离实际，不考虑客观影响因素！<br/>这种思维信念完全就是害人害己！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-03 00:25:58</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>393<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>思想情感都应该是自由的，你天天洗脑宣传，把思想情感都给绑架了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 23:13:57</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>不民主、不法治、不自由、不是公民社会、又无力对抗，怎么办？走为上策！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 22:40:23</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国人这个概念被中共搞得太复杂了！一直煽动大众的情绪，制造对立，太可恶了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 22:14:28</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>390<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国是个中华文明古国，我生在中共王朝时期可算是倒了血霉了。<br/>但愿中华文明古国及炎黄子孙们，能够早日走上正轨吧。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 22:02:41</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>哪里有说中文的平台社区或群组可以正常的聊聊天呢！<br/>国内网络各种审查管控，不能说话简直憋死个人！<br/>大众都被洗脑洗的疯了！<br/>没法正常交流了，动不动就给人扣帽子！动不动就道德绑架！动不动就群起而攻之！<br/>各种颠倒是非、混淆视听、偷换概念，看着都烦！<br/>烦而不能说，简直憋死人！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 19:22:18</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>说啥也得出国，现在的中国简直憋死个人！压抑死！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 18:38:54</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>任志强说的话，令人越听越清醒！<br/>中国没人敢这么说话了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 18:05:46</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这就是中共及小粉红的一派作风，混淆概念可比讲道理简单多了！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/02_174913_1.jpg" src="2021/10/02_174913_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 17:49:13</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>混淆概念可比梳理逻辑轻松多了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 17:41:05</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>烂透了
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/02_172000_1.jpg" src="2021/10/02_172000_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 17:20:00</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这个制度真的烂透了！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/02_171553_1.jpg" src="2021/10/02_171553_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 17:15:53</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中华文明古国一定会变的！一定会好起来的！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 17:00:32</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>搞对立！戴帽子！化友为敌！这种人太可恶了！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/02_164401_1.jpg" style="background-image:url(2021/10/02_164401_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_164401_2.jpg" style="background-image:url(2021/10/02_164401_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_164401_3.jpg" style="background-image:url(2021/10/02_164401_3.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 16:44:01</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>一群被塑造成奴才思维的人，完全没有公民社会的概念！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 16:06:46</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这种蠢蛋气死人！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/02_155826_1.jpg" src="2021/10/02_155826_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 15:58:26</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>“别给国家添乱”，这种思维信念就是中国的一大问题！也反应了中共的洗脑程度！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/02_084305_1.jpg" src="2021/10/02_084305_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 08:43:05</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中共一直在搞对立，但只要你一说他，他就会给你戴各种帽子！<br/>滑稽死
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/02_071141_1.jpg" style="background-image:url(2021/10/02_071141_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_071141_2.jpg" style="background-image:url(2021/10/02_071141_2.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 07:11:41</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>376<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>被洗脑洗的太严重太反智了！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/02_065939_1.jpg" style="background-image:url(2021/10/02_065939_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_065939_2.jpg" style="background-image:url(2021/10/02_065939_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_065939_3.jpg" style="background-image:url(2021/10/02_065939_3.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 06:59:39</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>375<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国大众完全没有公民观念！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 06:17:42</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>374<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>道德观念就是用来束缚人的！<br/>你对我好，我也对你好，这是正常的情感。你却把他标准化，不考虑其它的影响因素，只要你对我好，我就一定也得对你好，不然如果违反了道德标准的规定就会遭到谴责，这简直是糟糠文化！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 06:16:55</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>还是感恩国家感恩政府的问题。<br/>国家政府机构也是由公民组成的，这是公民社会分工合作的产物，你感恩他干啥呢？要说感恩，那政府机构又不从事直接生产，其运作成本都是其他人负担的，那政府岂不是更要感恩其他人吗？<br/>大家都是国家的公民，分工不同而已，扯什么感恩啊！简直莫名其妙！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 05:42:22</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>372<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>妖魔鬼怪都不如小粉红可怕！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 05:26:37</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>为什么网络氛围那么差，一个是中共严格管控刻意引导，令小粉红们占据了舆论的高地，使得持有其他不同意见的人发不出声和不敢发声。<br/>另一个是，理性人看着那些反智的言论实在都懒得搭理了！<br/>这个博主讽刺的挺好的，但弹幕的言论反智程度实在令人懒得搭理。<br/>还有让人家有本事就去和陈平当面辩论的。<br/>我的天！陈平那家伙心里和明镜似的，哪还用的着辩论！<br/>中国要是真的言论自由了，他所表达的那些言论还会有人搭理吗？他好意思辩论吗？他有脸辩论吗？他还敢回来吗？<br/>这种民族败类，人人得而诛之啊！
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/02_051341_1.jpg" style="background-image:url(2021/10/02_051341_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_2.jpg" style="background-image:url(2021/10/02_051341_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_3.jpg" style="background-image:url(2021/10/02_051341_3.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_4.jpg" style="background-image:url(2021/10/02_051341_4.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_5.jpg" style="background-image:url(2021/10/02_051341_5.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_6.jpg" style="background-image:url(2021/10/02_051341_6.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_7.jpg" style="background-image:url(2021/10/02_051341_7.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_8.jpg" style="background-image:url(2021/10/02_051341_8.jpg);"></span>
+<span class="pic" data-pic="2021/10/02_051341_9.jpg" style="background-image:url(2021/10/02_051341_9.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 05:13:41</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>370<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>必须得唤醒大众！中共国这么大个国家这么搞下去怎么得了呢！全世界都会受影响啊！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 02:21:55</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>无耻文人太多了！气死我了😤
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 02:19:48</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>小粉红简直是要了命了！<br/>太可怕了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 02:19:00</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>被塑造的思维讲的话当然没问题，但一旦清醒了，你就会发现处处限制着你呢。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 01:38:12</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>366<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>越清醒越压抑，可压抑死我了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 01:20:21</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>365<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>国人睡着了，我想唤醒国人。<br/>可催眠怪太强大了，他不光自己阻拦着我，他还催眠着国人对我群起而攻之。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-02 00:55:57</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>364<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>学英语，出国！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 16:03:51</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>为什么现实社会和网络上都那么浮躁，因为中共在各种颠倒是非、混淆视听、偷换概念、制造对立、制造情绪化呢！他怕大众变理性啊！<br/>他管着所有的平台，话语权极大！官媒和天然及拿钱的水军只要一宣传引导，再限制下不同的声音，全网口径就都统一了，大众一直被这些内容洗脑能不浮躁能不情绪化吗！
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/01_155925_1.jpg" src="2021/10/01_155925_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 15:59:25</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>362<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>一群祸国殃民的人为虎作伥，难受死我了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 13:49:21</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这就是中共可以引导想要的效果。
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/10/01_134212_1.jpg" src="2021/10/01_134212_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 13:42:12</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>刻意<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>又去帮忙收秸秆了，但一想到他们的不思进取、网络上的搅屎棍及中国的现状，就压抑的我瘫站在那，完全没有动的动力了。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 13:41:09</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>359<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>网上一群搅屎棍说一些要对父母宽容理解的话，简直太傻逼了！<br/>一个水桶漏水，你不赶紧给堵上，你光宽容理解有什么用！<br/>父母愚昧无知你不去引导改变他们的思维信念，光他妈的宽容理解干啥！太他妈莫名其妙了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 13:17:42</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>现在坐在我旁边的四个人，抽着烟喝着酒刷着短视频吃着饭，这就是我之前所说的间接影响问题。<br/>如果一个人不思进取、固步自封、思维简单僵化，那你给他再多的钱，他也无法避免痛苦。<br/>他没有相应的思维保护自己，他会做出很多不利于自己健康不利于自己主观感受的事情。为此你就需要付出更多的精力感情和金钱去处理这些后续问题，而如果他们仍然还是不思进取固步自封，那么这些问题就永远解决不完！双方都会遭受由此带来的痛苦与折磨。<br/>就像是一个漏水的桶，如果你不先把漏水处堵好，那么不管你灌再多的水，他终究还是会漏完的。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 13:09:51</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>357<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>如何有人质问我说，以后你的孩子怎么怎么样，你怎么办？<br/>这就是个伪问题，如果我没有相应的能力我就不会生孩子，完全不会有生孩子的动机。<br/>养孩子是会产生感情的，我能意识到他将来所会面临的问题，我没有能力给他培养解决问题所需的思维，没有能力给他积累解决问题所需的资源，那么他遇到问题束手无策痛苦时，我也是会痛苦的，我可舍不得自己的孩子痛苦。<br/>所以如果相关的条件不满足，我又怎么会有生孩子的动机呢？
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 12:21:09</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>356<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>想打磨一篇关于道德观念的文章，但却很难沉下心去。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 11:29:18</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国的传统道德观念就是“养儿防老”，把孩子养大然后让孩子养着自己，把希望都寄托在孩子身上，并对其灌输强化各种思维信念，对其进行各种道德绑架。<br/>正是因为持有这样的思维信念，所以就失去了主动追求学习进步的动力，这就会导致自己不思进取固步自封，严重损害了双方的利益。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 11:27:35</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>一个车的问题一个父母的问题，搞得我很浮躁！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 11:07:33</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>好好的生活不让过，非得搞对立搞情绪化，搞得大家戾气那么重！<br/>可恶的中共！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 04:48:24</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>真要把大众的逻辑梳理清了，大众也就没有这么多问题了。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 04:00:13</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>351<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>我是山东人，你是台湾人，我是中华人民共和国人，你是中华民国人，大家都是传承了中华文化和血脉的人。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 03:56:14</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>350<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>很多思维信念不一定通过梳理逻辑给其纠正，也可以通过其他方式使其弱化使其排斥。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 03:49:56</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>这种人太可怕了，和土匪一样！<br/>台湾是中国的一部分，没问题啊。但这个中国指的是文明文化民族及疆域啊，不是什么中华人民共和国，要论政权人家中华民国还在你之前呢。<br/>你都这样了，人家都尊重你的观念，你却对人家道德绑架群起而攻之，太可怕了！<br/>什么叫不愿做中国人呢？<br/>人家确实是不愿做中共统治下的人啊，人家中华民国的人也是中国人啊，大清国的人也是中国人啊！这种人简直是土匪！<br/>假如台湾比大陆更大更强，人家是不是就可以反过来对你说这些话了呢？<br/>中国和中华人民共和国可别混为一谈。<br/>如果把中华人民共和国改成中共国就更好理解了。<br/><br/>古老的中华文明古国在大清国灭亡后建立了中华民国，之后中华民国的政府政党从大陆搬去了台湾，而中共在大陆成立了中共国，如今有人举着中共国的国旗去到中华民国的地盘上说中华民国的地盘是中国的一部分（这里的中国如果指的是中华文明古国，那就没问题。大陆和台湾在历史上都是中华文明古国的一部分。如果是中共国，那就莫名其妙了。），说人家是中国人（这里的中国人如果指的是拥有中华文明古国血脉文化的人那就没问题。如果指的是中共国的人那就莫名其妙了）<br/>这些概念简直是被中共搞得乱七八糟了，抽空再梳理梳理。<br/>总之，你理直气壮的去道德绑架人家我就觉得很莫名其妙。
+</p>
+                    <div class="pic_n">
+<span class="pic" data-pic="2021/10/01_033749_1.jpg" style="background-image:url(2021/10/01_033749_1.jpg);"></span>
+<span class="pic" data-pic="2021/10/01_033749_2.jpg" style="background-image:url(2021/10/01_033749_2.jpg);"></span>
+<span class="pic" data-pic="2021/10/01_033749_3.jpg" style="background-image:url(2021/10/01_033749_3.jpg);"></span>
+<span class="pic" data-pic="2021/10/01_033749_4.jpg" style="background-image:url(2021/10/01_033749_4.jpg);"></span>
+<span class="pic" data-pic="2021/10/01_033749_5.jpg" style="background-image:url(2021/10/01_033749_5.jpg);"></span>
+<span class="pic" data-pic="2021/10/01_033749_6.jpg" style="background-image:url(2021/10/01_033749_6.jpg);"></span>
+<a class="open" onclick="CopyFile(this,'2021/10/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 03:37:49</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>348<br/><span>博洋「梳理逻辑」：</span>台湾是中华民国的，大陆是中华人民共和国的，台湾可不是中华人民共和国的，最多只能说原来台湾是中华文明古国的一部分。而中华文明古国和中华人民共和国可不是一回事。<br/><span>博洋「梳理逻辑」：</span>中国是中华文明古国，你在中国大陆成立中华人民共和国，人家早在你之前在中国成立了中华民国，然后跑去了台湾。一个中华人民共和国，一个中华民国，如果中华人民共和国不顾人家的意愿要强行统一人家，那不就是土匪吗？<br/><span>博洋「梳理逻辑」：</span>大家都是传承着中华文明古国文化的人，你成立了中华人民共和国，我成立了中华民国，而且我还在你前。<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>现在我在朋友圈发这些内容还没有什么事（我把朋友都屏蔽了，动态内容也压制了一些情绪。微信朋友圈的管理策略估计是会对外屏蔽一些敏感内容，也就是你的朋友们看你的朋友圈是看不到这些敏感内容的。如果被人举报估计还是会触发一些机制。如果朋友圈公开发布太多不利于中共的内容，估计仍然可能会被请去喝茶，并列为重点监控对象，那么自己在微信在互联网上的言行估计都会被监控，线下估计也会进行一些技术监控算法分析），但等技术逐步的升级后，估计就真的可以全面精密的监控大众，并根据大众所发的内容、浏览的内容及线下的各种监控技术和其他各种因素，结合算法就可以分析出一个人的思维信念，分析出个体及大众对其的各种影响，并可以迅速做出相应的应对措施。<br/>这太可怕了！<br/><br/>现在中国大众浮躁的，看着就和要随时发火和你干仗似得。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 01:45:14</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>347<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>中国社会现在被中共搞得和疯了一样，想想朝鲜及日本当年与德国当年，中共太气人了！
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 01:15:36</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>两个家长接孩子放学，其中一个孩子说不能闯红灯，结果另一个家长就闯了。于是这个小女孩就激动的和他妈妈说，他妈妈就不耐烦的反问她管那干啥，而不是去教育孩子关于这个问题背后的各种问题以完善孩子的思维帮助孩子成长。<br/>为什么呢？因为她也不懂，她也不想懂，她生孩子只是为了不想做不生孩子的特殊人，只是为了老了有人养有人管，她并不会真正的为了孩子考虑，不会考虑孩子所面对的是什么样的未来，不会去学习各种知识以帮助孩子学习成长，不会去想办法帮助孩子减轻负担，不会去了解一切帮助孩子避免痛苦，她只会按照大众普遍的做法把孩子养大，只会给孩子灌输各种莫名其妙的信念，只会对孩子进行道德绑架，然后依附于孩子。<br/>中国的孩子是很可悲的。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 00:58:45</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>345<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>很多人除了钱变多了，思维上却没有得到多少积累，那么这个钱的积累成本相对来说就很高了。<br/>钱很重要，思维更重要。<br/>不注重思维的积累，那么有钱也未必能快乐，有钱也未必能够避免痛苦，只追求钱却不追求思维的积累，可能便会得不偿失及竹篮打水一场空。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-10-01 00:30:57</span>
+                </div><div class="com clearfix"><span>博洋「梳理逻辑」：</span>344<br/></div>            </div>
+        </div></div>
+<div id="wz"></div>
+<script type="text/JavaScript" language="javascript">
+window.onresize = function(){
+	location.reload();
+}
+function AddImgClickEvent()
+{
+	
+	var objs = document.getElementsByClassName("pic");
+	sum = objs.length;
+	for(var i=0;i<objs.length;i++)
+	{
+		objs[i].id=i+1;
+		objs[i].onclick=function()
+		{
+			now_p = parseInt(this.getAttribute("id"))-1;
+			now_n = parseInt(this.getAttribute("id"))+1;
+			
+			//document.getElementById('f_pic').style.marginTop=0+"px";
+			document.getElementById('f_pic').src = this.getAttribute("data-pic");
+			xzpic()
+		}
+	}
+}
+function xzpic()
+{
+	document.getElementById('f_pic').style.marginTop=0+"px";
+	var windowW = document.documentElement.clientWidth;
+	if(windowW>640){
+		windowW=640;
+	}
+	var windowH = document.documentElement.clientHeight;
+	var realWidth = document.getElementById('f_pic').naturalWidth;
+	var realHeight = document.getElementById('f_pic').naturalHeight;
+	var n_h=realHeight*windowW/realWidth;
+	if(n_h<windowH){
+		document.getElementById('f_pic').style.marginTop=((windowH-n_h)/2)+ 'px';
+	}else{
+		document.getElementById('f_pic').style.marginTop=0+"px";
+	}
+	document.getElementById('light').style.display='block';
+	document.getElementById('fade').style.display='block'
+}
+AddImgClickEvent();
+function boxClickEvent()
+{
+var obj_box = document.getElementsByClassName("box");
+for(var i=0;i<obj_box.length;i++)
+	{
+		obj_box[i].index=i+1;
+		obj_box[i].onmouseover=function()
+		{
+			document.getElementById('wz').innerHTML=this.index+" / "+obj_box.length;
+		}
+	}
+}
+
+boxClickEvent();
+function next()
+{
+	if(now_n>sum) return;
+	document.getElementById('f_pic').src = document.getElementById(now_n).getAttribute("data-pic");
+	location.href = "#"+now_n;
+	xzpic();
+	now_n=now_n+1;
+	now_p=now_p+1;
+	stopBubbling(event);
+}
+function prev()
+{
+	if(now_p<1) return;
+	document.getElementById('f_pic').src = document.getElementById(now_p).getAttribute("data-pic");
+	location.href = "#"+now_p;
+	xzpic();
+	now_n=now_n-1;
+	now_p=now_p-1;
+	stopBubbling(event);
+	
+}
+function stopBubbling(e) {
+	e = window.event || e;
+	if (e.stopPropagation) {
+		e.stopPropagation();
+	} else {
+		e.cancelBubble = true;
+	}
+}
+window.onload = function(){
+	document.onkeydown = function(ev){
+	var ev = ev || window.event;
+	switch(ev.keyCode){
+		case 37://left����
+		prev();
+		break;
+		case 39://right
+		next();
+		break;
+}
+}
+}
+</script>
+</body>
+</html>

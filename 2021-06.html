@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2021-06_博洋「梳理逻辑」的朋友圈数据</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+<style type="text/css">
+body { font-size:14px; line-height: 120%;text-align: center; color:#333;position:relative;background:#fcfcfc;}
+a { color: #333; text-decoration: none;}
+a:hover { text-decoration: none;}
+* { margin: 0; padding: 0; border: none;}
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden}
+.clearfix { *height:1%;}
+#list { margin: 0 auto; text-align: left;max-width:640px;background:#fff; box-shadow: rgba(60, 60, 60, 0.22) 0px 0px 5px;}
+.box { border-bottom: 1px solid #eee; position: relative;padding:1rem;}
+.box:hover .close { display: block;}
+.head { float: left; width:10%;margin-right:2%;border-radius:10%;}
+.content { float: left; width:88%;}
+.main { margin-bottom: 10px;}
+.share{background:#f7f7f7;padding:3%;vertical-align:middle;}
+.share .text{float:left;width:85%;display:inline-block;font-size:0.95rem;color:#4966b9;line-height:1.3rem;}
+.share .text span{font-size:0.8rem;line-height:28px;font-weight:0;color:#7d97e1;}
+.share .img{float:left;width:12%;margin-right:2%;display:inline-block;}
+.share .img img{width:100%;}
+.pic_0{clear:both;}
+.pic_1{overflow:hidden;max-height:40rem;}
+.pic_1 .pic{width:65%;}
+.pic_1 video{width:65%;}
+.pic_n .pic{width:32.2%;display:inline-block;height:0px;padding-bottom:32.8%;overflow:hidden;background-position: center;center;background-size:cover;}
+.pic img{width:100%;}
+.txt {line-height:1.6rem;font-size:1rem;margin-bottom:1rem;}
+.txt img{width:1.2rem;vertical-align:top;margin:0 0.1rem;margin-top:0.2rem;}
+.user { color: #295c9d; line-height:1.6rem;}
+.info { height: 20px; line-height: 19px; font-size:0.6rem; margin: 0 0 10px 0;}
+.info .time { color: #ccc; float: left; height: 20px;}
+.zan {background:#fdfdfd;color:#175bb1;line-height:1.5rem;font-size:0.6rem;margin:0 5px;padding:5px;font-size:0.8rem;}
+.com {background:#fdfdfd;line-height:1.5rem;font-size:0.8rem;margin:0 5px;padding:5px;border-top:1px solid #eee;word-break:break-all;}
+.com img{width:1rem;vertical-align:top;margin:0 0.1rem;margin-top:0.3rem;}
+.com span{color:#175bb1;}
+.black_overlay{display: none;position: absolute;width: 100%;height: 100%;background-color:rgba(0,0,0,0.95);z-index: 1001;}
+.white_content{display:none;position:fixed;width:100%;height:100%;z-index:1002;overflow:auto;text-align:center;align-items: center;margin:0 auto;background-position: center;center;background-size:100%;background-repeat:no-repeat;}
+#f_pic{margin:0 auto;max-width:640px;width:100%;}
+#l_c{display:block;position:fixed;left:0;top:50%;padding:1rem;color:#fff;background:rgba(255,255,255,0.3);font-size:2rem;line-height:4rem;z-index:9999;}
+#r_c{display:block;position:fixed;right:0;top:50%;padding:1rem;color:#fff;background:rgba(255,255,255,0.3);;font-size:2rem;line-height:4rem;z-index:9999;}
+#wz{color:#175bb1;background:rgba(0,0,0,0.3);padding:10px;right:0px;top:0px;position:fixed;}
+.open{position:absolute;top:1rem;right:1rem;color:#f1f1f1;}
+#input{position: absolute;top: 0;left: 0;opacity: 0;z-index: -10;}
+</style>
+<script>
+var URL = decodeURIComponent(window.location.href).replace('file:///','');
+Dir = URL.substr(0,URL.lastIndexOf("/"));
+function CopyFile(obj,filename){
+      var input = document.getElementById("input");
+      input.value = Dir+"/"+filename;
+      input.select(); 
+      document.execCommand("copy"); 
+	  if(obj.style.color=='rgb(51, 51, 51)'){
+	  obj.style.color='#f1f1f1';
+	  }else{
+	  obj.style.color='#aaa';
+	  }
+}
+</script>
+</head>
+<body>
+<textarea id="input"></textarea>
+<div id="fade" class="black_overlay"></div>
+<div id="light" class="white_content" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"><img id="f_pic" src="" style="margin-top:0;" /><div id="l_c" onclick="prev();">&lt;</div><div id="r_c" onclick="next();">&gt;</div></div>
+<div id="list"><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>我的思想集———持续更新中。
+</p><div class="share"><a href="https://www.zhihu.com/column/c_1384436704129024000?utm_source=wechat_timeline&utm_medium=social&utm_oi=832265985481392128" target="_blank"><div class="img"><img src="http://shmmsns.qpic.cn/mmsns/dx4Y70y9Xcsyv5eosOfSt32YgZgt9ia2icQ2B60BaB59iadAibPYwY5TtZNOspMNJicf7tIF1AEoVRCc/150" alt=""/></div><div class="text">电子阅读器的设计与发展的深度思考<br/><span><span></div></a><div class="pic_0"></div></div>
+</div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-07 14:31:48</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>
+</p><div class="share"><a href="https://zhuanlan.zhihu.com/p/377735550?utm_source=wechat_timeline&utm_medium=social&utm_oi=832265985481392128" target="_blank"><div class="img"><img src="http://shmmsns.qpic.cn/mmsns/dx4Y70y9Xcsyv5eosOfSt8iaBJyf9nLz0TYOiaWefXUlME56UQ4DrLk48MQwAEcHlBQic7vwGiamay4/150" alt=""/></div><div class="text">论电子书阅读器的设计、发展<br/><span><span></div></a><div class="pic_0"></div></div>
+</div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-03 22:34:31</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>要想做好、做对一款产品，那么哲学、心理学、历史，甚至神经科学都是必须要了解的。<br/>做好一款产品难，选对发展方向更难。<br/>方向错了，即使做到了极致，那也是落后的。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-02 20:48:38</span>
+                </div><div class="zan clearfix">❤ 　　天官赐福🌴</div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>我的很多动态可能被屏蔽了，所以明天我要筛查一下，然后再做个本地备份，以防万一。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-02 00:55:37</span>
+                </div><div class="zan clearfix">❤ 温瞳映照谁的暧昧丶</div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>预告：如果微信被封，会对你造成什么影响？
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-02 00:51:26</span>
+                </div><div class="com clearfix"><span>　　天官赐福🌴：</span>交电费麻烦。买东西不能微信支付，不能看朋友心情动态，大体就这些<img src="images/14.gif" /><br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>捧杀的典型案例<br/>这种快乐、幸福只能是暂时的，而后果却可能会很严重。<br/>这位妈妈所谓的安排的策略也是极其简单的，基本就是盲目的进行即时满足，并不会考虑长远影响，也不会进行长期的规划，而后果将会是失控。<br/>在这种教育方式下，孩子幼年时期形成的根深蒂固的策略/信念可能在未来会面临适应不良、僵化，影响极大。<br/>在我看来这是非常愚蠢的教育方式，孩子将成为最终的受害者。<br/>by这是我姐姐
+</p>
+                    <div class="pic_1">
+<img class="pic" data-pic="2021/06/01_210226_1.jpg" src="2021/06/01_210226_1.jpg"/>
+<a class="open" onclick="CopyFile(this,'2021/06/')" >Copy</a></div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 21:02:26</span>
+                </div><div class="com clearfix"><span>博洋「文豪、哲人、审视者」：</span>通过观察，很容易分析出一个孩子的未来<br/><span>博洋「文豪、哲人、审视者」：</span>很多小孩都挺倒霉的。
+他/她们未来会痛苦的概率太大了。<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>意识的生理限制太大，得给它时间让它完成变化你才能感受到真正的变化。<br/>而在这期间，你所需要做的是对于改变不断的进行强化，剩下的就只能交给时间了。<br/>神经网络需要一段时间才能完成修剪、连接、强化、优化。<br/>做你需要做的，感受不到进展不要紧，变化是需要时间的，可能睡几觉后就突然感觉不同了。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 20:24:02</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>头脑越简单的人，越爱抱怨。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 19:07:33</span>
+                </div><div class="zan clearfix">❤ Cheris🎨</div><div class="com clearfix"><span>失去的多巴胺：</span>[難受]<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>最烦不断唉声叹气的人了<img src="images/50.gif" />
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 18:05:20</span>
+                </div><div class="zan clearfix">❤ Cheris🎨</div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>只有刻意练习才可以进步<br/>比如写作<br/>如果你只是随随便便写出来，那么你写再多遍你的水平也不会提升多少。<br/>只有你认真构思，用心去写，写完反复修改，改到无可修改。这样的刻意练习才可以使你进步。<br/>如果不去尝试突破自己，那不论你练习多少遍你的水平会依旧如故，顶多只是更熟练了些而已。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 17:33:42</span>
+                </div><div class="com clearfix"><span>博洋「组建团队」：</span>刻意练习便是建立更具适应性的神经连接和强化更具适应性的神经连接<br/></div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>非暴力沟通四要素<br/>1、观察2、感受3、需要4、请求<br/>请求：明确谈话的目的、提出具体的请求、寻求反馈和区分请求与命令。<br/>几个字就可以表达的意思，不要啰哩啰嗦、含糊不清、支支吾吾、嗯嗯啊啊，也不要为自己的请求寻找各种理由，这只会占用对方的认知资源、打断对方的思维、污染对方意识。更不要利用对方的愧疚、内疚、负罪感来为自己的请求寻找正当理由，这种请求属于命令，是使人所厌烦的。<br/>综上所述，这种人发出的请求可以称之为“精神污染”。久而久之，不断强化，这种“精神污染”造成的危害就会逐渐显现出来。<br/>用中国俗语讲：“近朱者赤，近墨者黑。”<br/>最后再说一句：“人是非常容易被同化的，无论你愿不愿意。“<br/><br/>一般人没有批判性思维，你和她沟通成本是很高的。她并不会仔细思考你的观点，她只会本能的快速的做出回答（这样的人的策略是僵化的、是适应性不良的，是可被预测的），这样的沟通是毫无意义。沟通成本之高，如非必要还是保持沉默吧。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 13:52:33</span>
+                </div>            </div>
+        </div><div class="box clearfix">
+            <img class="head" src="images/avatar.jpg" alt=""/>
+            <div class="content">
+                <div class="main">
+                    <p class="txt">
+                        <span class="user">博洋「梳理逻辑」<br/></span>有了文化你就可以获得权，什么权？话语权。<br/>文化+话语权=民心/控制感/安全感<br/>有文化可以引导舆论使人们内化自己的观点其他人也会跟着认同，这是钱、权难以阻挡的力量。这就是得民心者得天下；这就是文化的力量。一笔抵万军。<br/>你要怕被人欺负，光有钱和权是不够的。<br/>总有比你更有钱更有权的人。<br/>权比钱厉害，而权是人民赋予的。<br/>人民要比钱和权更厉害。<br/>那么怎么获得人民的支持呢，这就需要你有足够的才学、足够了解人性，利用自己所言所行引起舆论，使人民站在你这一边。什么钱什么权，都奈何不了你。<br/>舆论可以拯救一个人，也可以摧毁一个人。<br/>而掌握舆论最重要的是才学。<br/>有才学=话语权=舆论=民心=安全 /  胜利<br/>才学比钱、权好使。
+</p>
+                    <div class="pic_0">
+
+</div>
+                </div>
+                <div class="info clearfix">
+                    <span class="time">2021-06-01 02:17:44</span>
+                </div><div class="zan clearfix">❤ 宋大佬</div><div class="com clearfix"><span>会飞的螃蟹🦀：</span>有钱才有话语权<br/></div>            </div>
+        </div></div>
+<div id="wz"></div>
+<script type="text/JavaScript" language="javascript">
+window.onresize = function(){
+	location.reload();
+}
+function AddImgClickEvent()
+{
+	
+	var objs = document.getElementsByClassName("pic");
+	sum = objs.length;
+	for(var i=0;i<objs.length;i++)
+	{
+		objs[i].id=i+1;
+		objs[i].onclick=function()
+		{
+			now_p = parseInt(this.getAttribute("id"))-1;
+			now_n = parseInt(this.getAttribute("id"))+1;
+			
+			//document.getElementById('f_pic').style.marginTop=0+"px";
+			document.getElementById('f_pic').src = this.getAttribute("data-pic");
+			xzpic()
+		}
+	}
+}
+function xzpic()
+{
+	document.getElementById('f_pic').style.marginTop=0+"px";
+	var windowW = document.documentElement.clientWidth;
+	if(windowW>640){
+		windowW=640;
+	}
+	var windowH = document.documentElement.clientHeight;
+	var realWidth = document.getElementById('f_pic').naturalWidth;
+	var realHeight = document.getElementById('f_pic').naturalHeight;
+	var n_h=realHeight*windowW/realWidth;
+	if(n_h<windowH){
+		document.getElementById('f_pic').style.marginTop=((windowH-n_h)/2)+ 'px';
+	}else{
+		document.getElementById('f_pic').style.marginTop=0+"px";
+	}
+	document.getElementById('light').style.display='block';
+	document.getElementById('fade').style.display='block'
+}
+AddImgClickEvent();
+function boxClickEvent()
+{
+var obj_box = document.getElementsByClassName("box");
+for(var i=0;i<obj_box.length;i++)
+	{
+		obj_box[i].index=i+1;
+		obj_box[i].onmouseover=function()
+		{
+			document.getElementById('wz').innerHTML=this.index+" / "+obj_box.length;
+		}
+	}
+}
+
+boxClickEvent();
+function next()
+{
+	if(now_n>sum) return;
+	document.getElementById('f_pic').src = document.getElementById(now_n).getAttribute("data-pic");
+	location.href = "#"+now_n;
+	xzpic();
+	now_n=now_n+1;
+	now_p=now_p+1;
+	stopBubbling(event);
+}
+function prev()
+{
+	if(now_p<1) return;
+	document.getElementById('f_pic').src = document.getElementById(now_p).getAttribute("data-pic");
+	location.href = "#"+now_p;
+	xzpic();
+	now_n=now_n-1;
+	now_p=now_p-1;
+	stopBubbling(event);
+	
+}
+function stopBubbling(e) {
+	e = window.event || e;
+	if (e.stopPropagation) {
+		e.stopPropagation();
+	} else {
+		e.cancelBubble = true;
+	}
+}
+window.onload = function(){
+	document.onkeydown = function(ev){
+	var ev = ev || window.event;
+	switch(ev.keyCode){
+		case 37://left����
+		prev();
+		break;
+		case 39://right
+		next();
+		break;
+}
+}
+}
+</script>
+</body>
+</html>
